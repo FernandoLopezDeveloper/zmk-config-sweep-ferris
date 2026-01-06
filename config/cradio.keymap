@@ -82,7 +82,7 @@
         //│  Z       │  X       │  C       │  V       │  B       │   │  N       │  M       │ , <      │ . >      │ / ?      │
             &kp Z      &kp X      &kp C      &kp V      &kp B          &kp N      &kp M      &kp COMMA  &kp DOT    &kp FSLH
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
-                                            &lt 2 TAB   &kp BSPC     &lt 1 SPACE   &key_repeat
+                                            &lt 2 TAB   &kp SPACE   &lt 1 BSPC   &key_repeat
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
             >;
         };
