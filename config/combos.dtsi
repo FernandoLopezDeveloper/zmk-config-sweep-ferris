@@ -1,0 +1,79 @@
+#define LONG_TIMEOUT_MS 100
+#define NORMAL_LAYERS 0 1
+
+#define COMBO(NAME, BINDINGS, KEYPOS) \
+  combo_##NAME { \
+    bindings = <BINDINGS>; \
+    key-positions = <KEYPOS>; \
+    layers = <NORMAL_LAYERS>; \
+  };
+
+#define COMBO_LONG(NAME, BINDINGS, KEYPOS) \
+  combo_##NAME { \
+    bindings = <BINDINGS>; \
+    key-positions = <KEYPOS>; \
+    layers = <NORMAL_LAYERS>; \
+    timeout-ms = <LONG_TIMEOUT_MS>; \
+  };
+
+/* Escape - Esquina superior izquierda, fácil de alcanzar */
+COMBO(esc, &kp ESC, 0 1)
+
+/* Tab - Fila superior izquierda */
+COMBO(tab, &kp TAB, 1 2)
+
+/* Cmd+C (Copy) - La posición más cómoda para el atajo más usado */
+COMBO(cmd_c, &kp LG(C), 12 13)
+
+/* Cmd+V (Paste) - Segunda posición más cómoda */
+COMBO(cmd_v, &kp LG(V), 13 14)
+
+/* Cmd+X (Cut) - Home row izquierdo */
+COMBO(cmd_x, &kp LG(X), 11 12)
+
+/* Cmd+Z (Undo) - Home row izquierdo */
+COMBO(cmd_z, &kp LG(Z), 10 11)
+
+/* Cmd+Shift+Z (Redo) - Home row */
+COMBO(cmd_redo, &kp LG(LS(Z)), 10 12)
+
+/* Cmd+A (Select All) - Home row */
+COMBO(cmd_a, &kp LG(A), 10 13)
+
+/* Cmd+S (Save) - Home row */
+COMBO(cmd_s, &kp LG(S), 11 13)
+
+/* Backspace - Home row */
+COMBO(backspace, &kp BSPC, 16 17)
+
+/* Enter - Pulgares izquierdo, muy cómodo */
+COMBO(enter, &kp RET, 31 32)
+
+/* Paréntesis izquierdo ( - Fila superior */
+COMBO(lparen, &kp LPAR, 7 8)
+
+/* Paréntesis derecho ) - Fila superior */
+COMBO(rparen, &kp RPAR, 8 9)
+
+/* Llave izquierda { - Home row */
+COMBO(lbrace, &kp LBRC, 26 27)
+
+/* Llave derecha } - Home row */
+COMBO(rbrace, &kp RBRC, 27 28)
+
+/* Pipe | - Fila superior */
+COMBO(pipe, &kp PIPE, 5 6)
+
+/* Grave accent ` - Para template literals, fila inferior */
+COMBO(grave, &kp GRAVE, 20 21)
+
+COMBO(equal_strict, &equals_strict, 14 15)
+
+/* No igual !== - Macro, home row */
+COMBO(not_equal, &not_equal, 12 15)
+
+/* And lógico && - Macro, home row */
+COMBO(and_logical, &and_logical, 11 14)
+
+/* Or lógico || - Macro, home row */
+COMBO(or_logical, &or_logical, 13 15)
