@@ -77,3 +77,5 @@ COMBO(and_logical, &and_logical, 11 14)
 
 /* Or lógico || - Macro, home row */
 COMBO(or_logical, &or_logical, 13 15)
+
+COMBO(template_literal, &template_literal, 25 26)
