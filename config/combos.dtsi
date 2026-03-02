@@ -16,11 +16,10 @@
     timeout-ms = <LONG_TIMEOUT_MS>; \
   };
 
-/* Escape - Esquina superior izquierda, fácil de alcanzar */
-COMBO(esc, &kp ESC, 0 1)
+/* Escape - Ambos pulgares izquierdos (sin usar meñiques) */
+COMBO(esc, &kp ESC, 15 16)
 
-/* Tab - Fila superior izquierda */
-COMBO(tab, &kp TAB, 1 2)
+/* Tab: usar pulgar izquierdo (mantener layer 2 = tap Tab); combo quitado para no forzar meñique */
 
 /* Cmd+C (Copy) - La posición más cómoda para el atajo más usado */
 COMBO(cmd_c, &kp LG(C), 12 13)
@@ -50,9 +49,9 @@ COMBO(backspace, &kp BSPC, 16 17)
 COMBO(enter, &kp RET, 31 32)
 
 /* Paréntesis izquierdo ( - Fila superior */
-COMBO(lparen, &kp LPAR, 7 8)
+COMBO(lparen, &kp LPAR, 7 8) /* no me funciono lo hace para el otro lado*/
 
-/* Paréntesis derecho ) - Fila superior */
+/* Paréntesis derecho ) - Fila superior  no funciona*/
 COMBO(rparen, &kp RPAR, 8 9)
 
 /* Llave izquierda { - Home row */
