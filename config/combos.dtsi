@@ -16,7 +16,7 @@
 
 /* Escape and Enter backups on the thumbs */
 COMBO(esc, &kp ESC, 30 31)
-COMBO(enter, &kp RET, 31 32)
+COMBO(enter, &kp RET, 32 33)
 
 /* Parens: J+K = ( and K+L = ) */
 COMBO(lparen, &kp LPAR, 16 17)
@@ -34,18 +34,18 @@ COMBO(or_logical, &or_logical, 22 23)
 COMBO(template_literal, &template_literal, 23 24)
 COMBO(arrow, &arrow, 5 6)
 
-/* Game layer toggle: both bottom pinkies (base layer only) */
+/* Game layer toggle: Z+B, same half (cross-half combos miss the 50 ms window over BLE) */
 combo_game {
     bindings = <&tog 4>;
-    key-positions = <20 29>;
+    key-positions = <20 24>;
     layers = <0>;
     timeout-ms = <COMBO_TIMEOUT_MS>;
 };
 
-/* System layer, one key only: both top pinkies (base layer only) */
+/* System layer, one key only: Q+T, same half */
 combo_sys {
     bindings = <&sl 5>;
-    key-positions = <0 9>;
+    key-positions = <0 4>;
     layers = <0>;
     timeout-ms = <COMBO_TIMEOUT_MS>;
 };
